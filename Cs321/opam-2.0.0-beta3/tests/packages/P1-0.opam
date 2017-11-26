@@ -1,0 +1,11 @@
+(* API version *)
+opam-version: "1"
+
+name: "P1"
+version: "0"
+
+setenv: [P1 = "version0"]
+substs: "P1.config"
+
+build: [ "ocamlbuild" "p1.cma" "p1.cmxa" ]
+depends: ["ocaml"]
